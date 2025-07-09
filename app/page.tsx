@@ -1,0 +1,325 @@
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Star, Play, Users, Award, Heart, Music, TrendingUp, Zap, Sparkles } from "lucide-react"
+import Image from "next/image"
+
+export default function DanceSchoolHistory() {
+  const timelineEvents = [
+    {
+      year: "2000-2004",
+      title: "The Beginning",
+      description:
+        "Our humble start with just a few passionate dancers and a dream to bring movement and joy to the community.",
+      icon: <Heart className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/117BdggLPX71VbCpW3K48MYRPpgFAFofg/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - The Beginning (2000-2004)"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2004-2008",
+      title: "Growing Strong",
+      description:
+        "Expanding our classes, welcoming new instructors, and establishing our signature style that would define us.",
+      icon: <Users className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1szm5okk6R0aIdpOSyu8nxU6Mw2764ZJ_/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - Growing Strong (2004-2008)"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2008-2011",
+      title: "Recognition & Awards",
+      description:
+        "Achieving recognition in regional competitions and building partnerships with local schools and organizations.",
+      icon: <Award className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1TQi8v4MgpJrADh4KvXJRnaYXu8bOwgJF/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - Recognition & Awards (2008-2011)"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2011-2014",
+      title: "Community Impact",
+      description:
+        "Becoming a cornerstone of the community with annual festivals, charity performances, and outreach programs.",
+      icon: <Music className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/18npGdcIlrJO8fdYeXdNXk5bDtf4VUADb/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - Community Impact (2011-2014) - Link Issue"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2015-2017",
+      title: "New Heights",
+      description: "Pushing boundaries and reaching new milestones with innovative performances and collaborations.",
+      icon: <Star className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1t0vTdT2hX0cS2s-uMrOo097e4OrpgW1p/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - 2015-2017 Highlights"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2017-2019",
+      title: "Continued Growth",
+      description:
+        "Further expanding our reach and impact, introducing new programs and engaging more of the community.",
+      icon: <TrendingUp className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1c9HzwebN9j-CcDKaG5FG4wlF6d2sRWVT/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - Continued Growth (2017-2019)"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2020-2023",
+      title: "Adapting & Innovating",
+      description:
+        "Navigating new challenges with resilience and creativity, finding new ways to connect and dance together.",
+      icon: <Zap className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1aDr0Z2WbOPmet-96WYHq_76Iy3G9B0hg/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - Adapting & Innovating (2020-2023)"
+          ></iframe>
+        </div>
+      ),
+    },
+    {
+      year: "2023-2025",
+      title: "The Road to 25 & Beyond!",
+      description:
+        "Celebrating our legacy as we approach our 25th anniversary and look forward to many more years of dance.",
+      icon: <Sparkles className="w-6 h-6" />,
+      videoEmbed: (
+        <div className="aspect-w-16 aspect-h-10">
+          <iframe
+            src="https://drive.google.com/file/d/1i3_ZcjWjxTbyvYX36PbXFZVrigGLbG-s/preview"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="w-full h-full rounded-lg border-0"
+            title="Motion Control Dance - The Road to 25 & Beyond! (2023-2025)"
+          ></iframe>
+        </div>
+      ),
+    },
+  ]
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-100">
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 to-green-400/20"></div>
+        <div className="absolute top-10 left-10 text-green-300/30 animate-pulse">
+          <Star className="w-8 h-8" />
+        </div>
+        <div className="absolute top-20 right-20 text-green-300/30 animate-pulse delay-300">
+          <Star className="w-6 h-6" />
+        </div>
+        <div className="absolute bottom-20 left-20 text-green-300/30 animate-pulse delay-700">
+          <Star className="w-10 h-10" />
+        </div>
+        <div className="absolute bottom-10 right-10 text-green-300/30 animate-pulse delay-500">
+          <Star className="w-7 h-7" />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <Badge className="mb-6 bg-green-500 hover:bg-green-600 text-white px-6 py-2 text-lg">
+            25 Years of Motion Control Dance
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 tracking-wide">
+            OUR <span className="text-green-600">DANCE</span> JOURNEY
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+            From humble beginnings to community celebrations - explore 25 years of passion, movement, and unforgettable
+            moments that shaped our dance family.
+          </p>
+
+          {/* Featured Poster and Schedule */}
+          <div className="mb-12">
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-start">
+              <div className="relative">
+                <Image
+                  src="/images/dance-festival-poster.png"
+                  alt="Family Dance Festival Poster"
+                  width={400}
+                  height={600}
+                  className="rounded-lg shadow-2xl mx-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+              </div>
+              <div className="relative">
+                <Image
+                  src="/images/festival-schedule.png"
+                  alt="Family Dance Festival Schedule"
+                  width={400}
+                  height={600}
+                  className="rounded-lg shadow-2xl mx-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+              Our <span className="text-green-600">History</span> Timeline
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Journey through the decades and witness how we've grown from a small dance studio to a beloved community
+              institution.
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-400 to-green-600 rounded-full"></div>
+
+            {timelineEvents.map((event, index) => (
+              <div key={index} className={`relative mb-16 ${index % 2 === 0 ? "md:pr-1/2" : "md:pl-1/2"}`}>
+                {/* Timeline Dot */}
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-green-500 rounded-full border-4 border-white shadow-lg flex items-center justify-center text-white z-10">
+                  {event.icon}
+                </div>
+
+                {/* Content Card */}
+                <Card
+                  className={`${index % 2 === 0 ? "md:mr-8" : "md:ml-8"} mt-6 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2`}
+                >
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-4">
+                      <Badge variant="outline" className="text-green-600 border-green-600 font-bold text-lg px-4 py-1">
+                        {event.year}
+                      </Badge>
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-gray-800 mb-4">{event.title}</h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed">{event.description}</p>
+
+                    {/* Video Section */}
+                    {event.videoEmbed ? (
+                      event.videoEmbed
+                    ) : (
+                      <div className="relative bg-gradient-to-br from-green-100 to-green-200 rounded-lg p-8 border-2 border-dashed border-green-300 hover:border-green-400 transition-colors duration-200">
+                        <div className="text-center">
+                          <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4 shadow-lg">
+                            <Play className="w-8 h-8 text-white ml-1" />
+                          </div>
+                          <h4 className="font-semibold text-gray-800 mb-2">Video Section</h4>
+                          <p className="text-gray-600 text-sm mb-4">{event.videoPlaceholder}</p>
+                          <Button
+                            variant="outline"
+                            className="border-green-500 text-green-600 hover:bg-green-500 hover:text-white bg-transparent"
+                          >
+                            Add Video Content
+                          </Button>
+                        </div>
+                      </div>
+                    )}
+                  </CardContent>
+                </Card>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-green-600 to-green-500 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Be Part of Our Story</h2>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+            Join us for our 25th Anniversary Family Dance Festival and help us create new memories that will be part of
+            our next chapter.
+          </p>
+
+          <div className="justify-center">
+            <a
+              href="https://www.motioncontroldance.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <Button
+                size="lg"
+                className="bg-white text-green-600 hover:bg-gray-100 px-8 py-4 text-lg rounded-full shadow-lg"
+              >
+                Learn More About Us
+              </Button>
+            </a>
+          </div>
+
+          <div className="mt-12 text-center">
+            <p className="text-lg opacity-80">Visit us at</p>
+            <p className="text-2xl font-bold">www.motioncontroldance.com</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-12 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="flex justify-center items-center mb-6">
+            <Music className="w-8 h-8 text-green-400 mr-3" />
+            <h3 className="text-2xl font-bold">Motion Control Dance</h3>
+          </div>
+          <p className="text-gray-400 mb-4">
+            Celebrating 25 years of bringing joy, movement, and community together through dance.
+          </p>
+          <p className="text-sm text-gray-500">© 2025 Motion Control Dance. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
