@@ -280,8 +280,8 @@ export default function DanceSchoolHistory() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Be Part of Our Story</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Join us for our 25th Anniversary Family Dance Festival and help us create new memories that will be part of
-            our next chapter.
+            Join us next season for a Chance to Dance - make sure you register for the class of your choice and become
+            part of the Motion Control Dance family.
           </p>
 
           <div className="justify-center">
@@ -309,15 +309,120 @@ export default function DanceSchoolHistory() {
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-12 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="flex justify-center items-center mb-6">
-            <Music className="w-8 h-8 text-green-400 mr-3" />
-            <h3 className="text-2xl font-bold">Motion Control Dance</h3>
+        <div className="max-w-6xl mx-auto">
+          {/* Sponsors Section */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-green-400 mb-6">Thank You to Our Sponsors</h3>
+            <p className="text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+              A huge thank you to our event sponsors - ACT, Mr Tees, Vale Youth Service, Legal & General, Case Cafe,
+              Fablas Ice cream, Snap Fitness, Vale Council - Events Team, Vale Arts Development Officer, Vale Healthy
+              Living Team, and St Johns Ambulance without your support this event would not have been possible.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/act-new.png"
+                  alt="ACT"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/mr-tees.avif"
+                  alt="Mr Tees"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/vale-youth-service-new.jpeg"
+                  alt="Vale Youth Service"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/legal-general-new.png"
+                  alt="Legal & General"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/case-cafe-new.png"
+                  alt="Case Cafe"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/fablas-new.webp"
+                  alt="Fablas Ice Cream"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/snap-fitness.jpeg"
+                  alt="Snap Fitness"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/vale-of-glamorgan-new.png"
+                  alt="Vale Council"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/st-john-ambulance-new.jpeg"
+                  alt="St Johns Ambulance"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <Image
+                  src="/images/sponsors/bbc-children-in-need-new.png"
+                  alt="BBC Children in Need"
+                  width={120}
+                  height={60}
+                  className="max-h-16 w-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
-          <p className="text-gray-400 mb-4">
-            Celebrating 25 years of bringing joy, movement, and community together through dance.
-          </p>
-          <p className="text-sm text-gray-500">© 2025 Motion Control Dance. All rights reserved.</p>
+
+          {/* Main Footer Content */}
+          <div className="text-center border-t border-gray-700 pt-8">
+            <div className="flex justify-center items-center mb-6">
+              <Music className="w-8 h-8 text-green-400 mr-3" />
+              <h3 className="text-2xl font-bold">Motion Control Dance</h3>
+            </div>
+            <p className="text-gray-400 mb-4">
+              Celebrating 25 years of bringing joy, movement, and community together through dance.
+            </p>
+            <p className="text-sm text-gray-500">© 2025 Motion Control Dance. All rights reserved.</p>
+          </div>
         </div>
       </footer>
     </div>
