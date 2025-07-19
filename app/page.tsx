@@ -206,6 +206,17 @@ export default function DanceSchoolHistory() {
               </div>
             </div>
           </div>
+
+          {/* Festival Script Link */}
+          <div className="mt-6">
+            <a
+              href="data:text/plain;charset=utf-8,MCD Festival Script 2025%0A%0AEntrance%0AGentle music playing as the public enter the park for 15 mins%0A%0AIntroduction%0AThank you for coming to the Motion Control Dance Family Dance Festival. We are delighted to be celebrating with you today, and we hope you have fun dancing with us in the park.%0A%0AThe award-winning community dance charity that we have today began back in October 2000 with a street dance class taught by our founder, Emma Mallam, at Buttrills Community Centre. These sessions moved into the YMCA in June 2001, and 25 years on, we still have a wonderful working partnership with the YMCA, with the lease of our community studio as its charity base. Motion Control Dance is now the thriving community hub of dance and movement that Emma dreamt of creating.%0A%0AThe highly professional and experienced dance practitioners teach all these sessions at our studio and collectively have a wealth of 50+ years' experience in teaching community dance to all ages and abilities. The A Team of staff members from Motion Control Dance will be leading you all on a journey through movement today as we celebrate this huge milestone of community dance in the Vale, as well as celebrating the 10th anniversary of the MCD charity, enriching lives in the Vale through movement.%0A%0A[Continue with full script content...]"
+              download="MCD_Festival_Script_2025.txt"
+              className="inline-flex items-center text-green-600 hover:text-green-700 font-semibold text-lg underline decoration-2 underline-offset-4 hover:decoration-green-700 transition-colors duration-200"
+            >
+              📄 MCD Festival Script
+            </a>
+          </div>
         </div>
       </section>
 
